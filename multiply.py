@@ -14,7 +14,11 @@ print(c)
 
 
 # This can also be done using Torch as follows - 
-t = torch.randn(2, 3)
-t1 = torch.randn(1, 6)
-t2 = torch.randn(6, 1)
-torch.addcmul(t, 0.1, t1, t2)
+x = torch.Tensor(5, 3)
+x = torch.rand(5,3)
+y= torch.Tensor(3, 10)
+y= torch.rand(3,10)
+k=x.numpy()
+l=y.numpy()
+z=k.dot(l)
+print(z)
